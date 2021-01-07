@@ -1,0 +1,75 @@
+/* Здесь подключаем шрифты, используя правило @font-face*/
+@font-face {
+    font-family: MuliRegular; 
+    src: url(./assets/fonts/Muli-Regular.woff); 
+}
+@font-face {
+    font-family: MuliBold; 
+    src: url(./assets/fonts/Muli-Bold.woff); 
+}
+@font-face {
+    font-family: MuliExtraBold; 
+    src: url(./assets/fonts/Muli-ExtraBold.woff); 
+}
+/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
+@font-face {
+    font-family: MuliExtraBoldItalic; 
+    src: url(./assets/fonts/Muli-ExtraBoldItalic.woff); 
+}
+@font-face {
+    font-family: PoppinsMedium; 
+    src: url(./assets/fonts/Poppins-Medium.ttf); 
+}
+font-face {
+    font-family: PoppinsSemiBold; 
+    src: url(./assets/fonts/Poppins-SemiBold.ttf); 
+}
+
+
+/* Общие стили */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+
+/* Smoothies */
+
+  /* About */
+
+
+/* Products */
+
+
+/* Story */
+
+
+/* Testimonials */
+
+
+/* Blog */
+
+
+/* Instagram */
+
+
+/* Footer */
+
+
+
+/* Здесь будут медиа запросы */
+
+
+
+
+
