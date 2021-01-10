@@ -11,7 +11,7 @@
     font-family: MuliExtraBold; 
     src: url(./assets/fonts/Muli-ExtraBold.woff); 
 }
-/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
+
 @font-face {
     font-family: MuliExtraBoldItalic; 
     src: url(./assets/fonts/Muli-ExtraBoldItalic.woff); 
@@ -29,6 +29,7 @@ font-face {
 /* Общие стили */
 html,
 body {
+    background-color: rgb(245, 221, 8);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,11 +42,33 @@ a {
 
 
 /* Header */
+.header-top{
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 71px 100px 109px;
+}
 
+.nav ul{
+    list-style-type: none;
+    display: inline-block;
+    display: inline-flex;
+    font-family: MuliBold;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 2.5;
+    margin: 0 35px 0 35px;
+}
 
+.personal ul li{
+    display: inline-block;
+}
 /* Smoothies */
 
-  /* About */
+/* About */
 
 
 /* Products */
