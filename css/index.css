@@ -66,18 +66,33 @@ a {
 .personal ul li{
     display: inline-block;
 }
+
+.btn--green-bg:after{
+    content: "\2192";
+    color: orange;
+}
 /* Smoothies */
 
 /* About */
 
 
+.btn--border-orange:after{
+    content: "\2192";
+    color: orange;
+}
 /* Products */
-
+.btn--border-white:after{
+    content: "\2192";
+}
 
 /* Story */
 
 
 /* Testimonials */
+.testimonials__img:after{
+    content: "\2190 \2192";
+    color: orange;
+}
 
 
 /* Blog */
