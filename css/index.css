@@ -189,11 +189,11 @@ background-color:#0aa566;
     font-size: 50px;
 }
 .title--yellow{
-    color: #f7ae3b;    
+    color: #f7ae3b;
+    letter-spacing: -1px;    
 }
 .smoothies_text{
-    height: 122px;
-    width: 915px;
+    max-width: 915px;
     text-align: center;
     line-height: 1.94;
     margin-bottom: 87px;    
@@ -233,30 +233,37 @@ background-color:#0aa566;
 .about{
     background-color: #14826f;
     display: flex;
+    padding: 64px 339px 0px 143px ;
 }
-.propertis{
-    padding: 97px 356px 67px 142px;
+.properties{
+    padding-top: 33px;
+    margin-left: 142px;
 }
 .title--white{
     color: #ffffff;
     font-size: 55px;
     margin-bottom: 67px;
     line-height: 60px;
+    letter-spacing: -1.1px;
+    width: 590px;
 }
 .title--green{
     color: #cae941;
 }
-.propertis__list{
+.properties__list{
     margin-bottom: 50px;
-
+    list-style-image: url(../img/marker.png);
+    margin-left: 37px;
 }
-.propertis__list-item{
+.properties__list-item{
     font-family: "MuliRegular";
     font-size: 21px;
-    color: #ffffff;
-    line-height: 27px;
+    color: #ffffff;    
+    margin-bottom: 26px;
 }
-
+.properties__bold{
+    font-family: "MuliBlack";
+}
 .btn--border-orange{
     height: 60px;
     width: 380px;
@@ -277,9 +284,8 @@ background-color:#0aa566;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 480px;
-    height: 720px;
     flex-grow: 1;
+    padding: 129px 0 79px;
 }
 .products__img{
     margin-bottom: 34px;
@@ -321,17 +327,18 @@ background-color:#0aa566;
 
 /* Story */
 .story{
-    padding: 120px 310px 160px;
+    padding: 120px 0 160px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 120px 0 160px;
 }
 .stoty__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 .story__text{
+    max-width: 511px;
     margin: 43px 206px 60px 0;
 }
 .story__btn{
@@ -358,8 +365,7 @@ background-color:#0aa566;
     margin-bottom: 121px;
 }
 .testimonials__feedback{
-    height: 130px;
-    width: 455px;
+    max-width: 455px;
     text-align: center;
     margin-right: 59px;
 }
@@ -381,31 +387,196 @@ background-color:#0aa566;
 .text--white{
     color: #ffffff;
 }
-.testimonials__img:after{
+/* .testimonials__img:after{
     content: "\2190 \2192";
     color: #fcb438;
-}
+} */
 
 
 /* Blog */
+
+.blog__top{
+    padding-top: 99px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+
+}
 .blog__title{
-    margin: 99px 1360px 49px 360px;
+    margin-bottom: 50px ;
 }
 
 .blog__content{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+.blog__article{
+    padding-top: 229px;
+    margin-left: 61px;
 }
 
-/* Instagram */
+.blog__subtitle{
+    font-family: "MuliExtraBold";
+    font-size: 30px;
+    line-height: 40px;
+    color:#f2612d;
+    text-transform: uppercase;
+}
+.blog__date{
+    font-size: 16px;
+}
 
+.blog__text{
+    max-width: 472px;
+    margin-left: 63px;
+}
+.blog__instagram{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.blog__instagram-link{
+    font-family: "MuliExtraBold";
+    font-size: 24px;
+    color: #0aa566;
+    line-height: 40px;
+    text-align: center;    
+}
+.blog__instagram-img{
+    vertical-align: middle;
+}
+/* Instagram */
+.instagram{
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 10px;
+}
 
 /* Footer */
+.footer__top{
+    background-color: #f6ab3b;
+    display: flex;
+    flex-direction: row;
+    padding: 79px 100px 90px;
+}
+.footer__logo{
+    padding-top: 54px;
+    margin-right: 296px;
+}
+.footer__information{
+    display: flex;
+    flex-direction:column;
+    margin-right: 152px;
+}
+.footer__information-list{
+    margin-top: 43px;
 
+}
+.footer__information-list-item{
+    
+}
+.footer__information-link{
+    font-family: "MuliBold";
+    color: #6d450c;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.45px;
+}
+.footer__title{
+    font-family: "MuliExtraBold";
+    color: #ffffff;
+    font-size: 26px;
+}
+.footer__payment{
+    margin-right: 166px;
 
+}
+.footer__payment{
+    display: flex;
+    flex-direction: column;
+}
+.footer__payment-list{
+    margin-top: 32px;
+    width:  289px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer__payment-list-item{
+    margin-right: 20px;
+    margin-bottom: 23px;
+}
 
+.footer__subscription{
+    display: flex;
+    flex-direction: column;
+}
+.footer__email{
+    margin-top: 35px;
+    height: 60px;
+    width: 495px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 23px 20px 23px 63px;
+    font-family: "MuliBold";
+    font-size: 17px;
+    background-color: #ffffff;
+    background-image: url(../img/email.png);
+    background-repeat: no-repeat;
+    background-position: 23px center;
+}
+input::placeholder{
+    color:#6d450c;
+}
+.footer__subscription-follow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 27px 52px 0 0;
+}
+.footer__subscription-button{
+    height: 12px;
+    width: 110px;
+    font-family: "MuliExtraBold";
+    font-size: 18px;
+    color: #6d450c;
+    text-transform: uppercase;
+    background: transparent;
+    letter-spacing: -0.36px;
+    margin-right: 43px;
+}
+.footer__subscription-link{
+    margin-right: 24px;
+}
+.footer__subscription-link:last-child{
+    margin-right: 0;
+}
+.footer__caption{    
+    display: flex;
+    justify-content: center;
+    background-color: #6c2c1c;    
+    padding: 26px 21px;
+}
+.footer__caption-rights{
+    font-family: "MuliRegular";
+    color: #af8a82;
+    font-size: 13px;
+}
+.footer__caption-jump{
+    font-family: "MuliBold";
+    font-size: 16px;
+    color: #ffffff;
+}
+.footer__caption-button{
+    height: 50px;
+    width: 50px;
+    background-color: #f2662f;
+}
 /* Здесь будут медиа запросы */
 
 
