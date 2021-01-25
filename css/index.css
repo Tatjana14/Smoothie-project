@@ -65,9 +65,9 @@ ul{
 .header__top{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 69px 100px 105px;
+    padding: 69px 0 105px;
 }
 
 .menu__list{
@@ -179,10 +179,10 @@ background-color:#0aa566;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 107px;
+    padding:98px 0 107px;
 }
 .smoothies__title{
-    padding: 98px 0 55px;
+    margin-bottom: 55px;
 }
 .title{
     font-family: "MuliExtraBold";
@@ -209,7 +209,24 @@ background-color:#0aa566;
 .smoothies__views{
     display: grid;
     grid-template-rows: repeat(2, 181px);
-    grid-template-columns: repeat(4, 240px) ;
+    grid-template-columns: repeat(4, 240px);
+}
+
+.smoothies__view-item:nth-child(-n+3){
+    border-right: 2px solid #f6edde;
+    border-bottom: 2px solid #f6edde;
+}
+.smoothies__view-item:nth-child(4){
+    border-bottom: 2px solid #f6edde;
+}
+.smoothies__view-item:nth-child(5){
+    border-right: 2px solid #f6edde;
+}
+.smoothies__view-item:nth-child(6){
+    border-right: 2px solid #f6edde;
+}
+.smoothies__view-item:nth-child(7){
+    border-right: 2px solid #f6edde;
 }
 .smoothies__view-item{
     display: flex;
@@ -359,6 +376,9 @@ background-color:#0aa566;
 .testimonials__title{
     margin-bottom:  118px;
 }
+.title--orange{
+    color: #f2612d;
+}
 .testimonials__content{
     display: flex;
     align-items: center;
@@ -430,6 +450,15 @@ background-color:#0aa566;
     max-width: 472px;
     margin-left: 63px;
 }
+.text__more{
+    font-family: "MuliExtraBoldItalic";
+    color: #1e1e1e;
+}
+.text__more::after{
+    content: "\2192";
+    color: #fcb438;
+    margin-left: 5px;
+}
 .blog__instagram{
     display: flex;
     justify-content: center;
@@ -457,21 +486,23 @@ background-color:#0aa566;
     background-color: #f6ab3b;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 79px 100px 90px;
 }
+.footer__top-content{
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+}
 .footer__logo{
-    padding-top: 54px;
-    margin-right: 296px;
+    display: flex;
+    align-items: center;
 }
 .footer__information{
     display: flex;
     flex-direction:column;
-    margin-right: 152px;
 }
-.footer__information-list{
-    margin-top: 43px;
 
-}
 .footer__information-list-item{
     
 }
@@ -486,10 +517,6 @@ background-color:#0aa566;
     font-family: "MuliExtraBold";
     color: #ffffff;
     font-size: 26px;
-}
-.footer__payment{
-    margin-right: 166px;
-
 }
 .footer__payment{
     display: flex;
@@ -576,6 +603,7 @@ input::placeholder{
     height: 50px;
     width: 50px;
     background-color: #f2662f;
+    
 }
 /* Здесь будут медиа запросы */
 
