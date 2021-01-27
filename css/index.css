@@ -90,12 +90,29 @@ ul{
 
 .header__block-right{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+}
+.header__personal{
+    position: relative;
 }
 .personal__list{
     display: flex;
     padding-right: 120px;
+}
+.personal__list::after{
+    content: "";
+    display: inline-block;
+    background-color:#ffd68f;
+    width: 47px;
+    height: 2px;
+    position: absolute;
+    right: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 .personal__list-item{
     display: flex;
