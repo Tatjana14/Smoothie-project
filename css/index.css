@@ -162,7 +162,6 @@ ul{
     border-radius: 50%;
     margin-right: 10px;
     line-height: 0.5;
-    z-index: 233;
 }
 .social__list-item:last-child{
     margin-right: 0;
@@ -201,6 +200,11 @@ background-color:#0aa566;
 .btn--green-bg:after{
     content: "\2192";
     color: #fcb438;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
 }
 
 
@@ -398,6 +402,7 @@ background-color:#0aa566;
 }
 .btn--border-white:after{
     content: "\2192";
+
 }
 
 /* Story */
@@ -465,11 +470,11 @@ background-color:#0aa566;
     color: #f2612d;
 }
 .testimonials__content{
-    position: relative;
     display: flex;
     margin-bottom: 121px;
 }
-.testimonials__content::before{
+
+.testimonials__feedback::before{
     content: "Sarah A";
     display: inline-block;
     position: absolute;
@@ -480,19 +485,22 @@ background-color:#0aa566;
     letter-spacing: -4px;
     opacity: 0.8;
     font-weight: 800;
-    z-index: 1;
     left: -166px;
     bottom: 158px;
+    width: 770px;
+    z-index: -1;
 }
 .testimonials__feedback{
     max-width: 455px;
     text-align: center;
     margin-right: 59px;
     padding-top: 55px;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 }
 .testimonials__img{
-    z-index: 2;
+    position: relative;
+    z-index: 1; 
 }
 
 .testimonials__quote{
@@ -599,14 +607,16 @@ background-color:#0aa566;
 }
 /* Instagram */
 .instagram{
-    width: 100%;
     display: flex;
     padding-bottom: 10px;
-
+    width: 100%;
 }
 .instagram__img-wrapper{
     position: relative;
-    flex: 1 0 20%;
+    flex: 1 0 20%;    
+}
+.instagram__img{
+
 }
 .instagram__img-wrapper::after{
     content: "";
