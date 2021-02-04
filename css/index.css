@@ -44,6 +44,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 a {
@@ -63,13 +64,16 @@ ul{
     background-size: cover;
 }
 .header__top{
+    padding: 70px 100px 105px;
+    position: relative;
+}
+.header__navigation{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 69px 0 105px;
+    width: 100%;
 }
-
 .menu__list{
     display: flex;
 }    
@@ -82,14 +86,20 @@ ul{
 .menu__link{
     font-family: "MuliBold";
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: rgb(255, 255, 255);
     letter-spacing: 0.32px;    
 }
 
 .header__logo{
-    position: relative;
-    right: 62px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    -webkit-transform: translate(-50%, -60%);
+    -moz-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    -o-transform: translate(-50%, -60%);
 }
 
 .header__block-right{
@@ -137,14 +147,15 @@ ul{
     height: 18px;
     font-size: 10px;
     background-color:rgb(255, 255, 255);
-    border-radius: 50%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
     position: absolute;
     right: 105px;
     top: -10px;
@@ -167,6 +178,20 @@ ul{
     margin-right: 0;
 }
 
+.header__burger-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+.header__burger-img{
+    width: 100%;
+
+}
 .header__content{
     display: flex;
     justify-content: center;
@@ -228,6 +253,7 @@ background-color:#0aa566;
 }
 .smoothies_text{
     max-width: 915px;
+    width: 100%;
     text-align: center;
     line-height: 1.94;
     margin-bottom: 87px;    
@@ -774,8 +800,48 @@ input::placeholder{
     right: 101px;
     top: -25px;
 }
-/* Здесь будут медиа запросы */
 
+
+/* Здесь медиа запросы */
+
+
+@media screen and (max-width: 786px){
+    html,
+    body{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px){
+
+    .header__navigation{
+        display: none;
+        width: 100%;
+        background-color: #0aa566;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left:0;
+        bottom: 0;
+        z-index: 9999999;
+        flex-direction: column-reverse;
+        padding: 160px 0;
+        justify-content: flex-end;
+    }
+    .menu__list{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+        margin-top: 160px;
+    }
+    .menu__list-item{
+        margin-right: 0;
+    }
+    .header__burger-btn{
+        display: block;
+        z-index: 99999999999;
+    }
+}
 
 
 
