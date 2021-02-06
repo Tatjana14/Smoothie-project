@@ -145,7 +145,7 @@ ul{
     font-family: "MuliRegular";
     width: 18px;
     height: 18px;
-    font-size: 10px;
+    font-size: 1rem;
     background-color:rgb(255, 255, 255);
     
     display: flex;
@@ -202,7 +202,7 @@ ul{
     align-items:center;
     font-family: "MuliExtraBold";
     color: rgb(255, 255, 255);
-    font-size: 21px;
+    font-size: 2.1rem;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -217,7 +217,7 @@ ul{
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
     -webkit-border-radius: 35px;
-    font-size: 24px;    
+    font-size: 2.4rem;    
 }
 .btn--green-bg{
 background-color:#0aa566;
@@ -245,7 +245,7 @@ background-color:#0aa566;
 }
 .title{
     font-family: "MuliExtraBold";
-    font-size: 50px;
+    font-size: 5.0rem;
 }
 .title--yellow{
     color: #f7ae3b;
@@ -260,7 +260,7 @@ background-color:#0aa566;
 }
 .text{
     font-family: "MuliRegular";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
 }
 .text--black{
@@ -270,8 +270,11 @@ background-color:#0aa566;
     display: grid;
     grid-template-rows: repeat(2, 181px);
     grid-template-columns: repeat(4, 240px);
+    background-color: #f6edde;
 }
-
+.smoothies__view-item{
+    background-color:rgb(255, 255, 255);
+}
 .smoothies__view-item:nth-child(-n+3){
     border-right: 2px solid #f6edde;
     border-bottom: 2px solid #f6edde;
@@ -301,7 +304,7 @@ background-color:#0aa566;
 }
 .smoothies__description{
     font-family: "MuliExtraBold";
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #f2612d;
     text-align: center;
 }
@@ -309,11 +312,22 @@ background-color:#0aa566;
 /* About */
 .about{
     background-color: #14826f;
-    display: flex;
-    padding: 64px 80px 0 143px ;
-    height: 805px;
+    
 }
-.properties{
+.conteiner{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.about__conteiner{
+    padding: 64px 0 0;
+}
+.about__block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    height: 800px;
+}
+.about__properties{
     padding-top: 30px;
     margin-left: 142px;
 }
@@ -325,11 +339,10 @@ background-color:#0aa566;
 }
 .title--white{
     color: #ffffff;
-    font-size: 55px;
+    font-size: 5.5rem;
     margin-bottom: 60px;
     line-height: 60px;
     letter-spacing: -1.1px;
-    width: 590px;
 }
 .title--green{
     color: #cae941;
@@ -352,13 +365,13 @@ background-color:#0aa566;
 .properties__list{
     margin-bottom: 50px;
     list-style-image: url(../img/marker.png);
-    margin-left: 37px;
+    padding-left: 37px;
 }
 .properties__list-item{
     font-family: "MuliRegular";
-    font-size: 21px;
+    font-size: 2.1rem;
     color: #ffffff;    
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 .properties__list-item:last-child{
     margin-bottom: 0;
@@ -382,14 +395,13 @@ background-color:#0aa566;
     display: flex;
     flex-direction: row;
     position: relative;
-    z-index: 1;
 }
 .products__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex: 1 0 25%; 
     padding: 129px 0 79px;
 }
 .products__img{
@@ -409,12 +421,12 @@ background-color:#0aa566;
 }
 .products__description{
     font-family: "MuliBold";
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #ffffff;
 }
 .products__capacity{
     font-family: "MuliItalic";
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 32px;
     color: #ffffff;
     margin-bottom: 65px;
@@ -504,7 +516,7 @@ background-color:#0aa566;
     display: inline-block;
     position: absolute;
     font-family: "MuliExtraBold";
-    font-size: 200px;
+    font-size: 20rem;
     color: rgba(82, 25, 5, 0.6);
     line-height: 0.2;
     letter-spacing: -4px;
@@ -592,14 +604,14 @@ background-color:#0aa566;
 }
 .blog__subtitle{
     font-family: "MuliExtraBold";
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 40px;
     color:#f2612d;
     text-transform: uppercase;
     letter-spacing: -0.6px;
 }
 .blog__date{
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .blog__text{
@@ -622,7 +634,7 @@ background-color:#0aa566;
 }
 .blog__instagram-link{
     font-family: "MuliExtraBold";
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #0aa566;
     line-height: 40px;
     text-align: center;    
@@ -641,7 +653,7 @@ background-color:#0aa566;
     flex: 1 0 20%;    
 }
 .instagram__img{
-
+    width: 100%;
 }
 .instagram__img-wrapper::after{
     content: "";
@@ -677,20 +689,20 @@ background-color:#0aa566;
     flex-direction:column;
 }
 
-.footer__information-list-item{
-    
+.footer__information-list{
+    margin-top: 30px;
 }
 .footer__information-link{
     font-family: "MuliBold";
     color: #6d450c;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     letter-spacing: -0.45px;
 }
 .footer__title{
     font-family: "MuliExtraBold";
     color: #ffffff;
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 .footer__payment{
     display: flex;
@@ -719,9 +731,9 @@ background-color:#0aa566;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    padding: 23px 20px 23px 63px;
+    padding: 24px 20px 23px 63px;
     font-family: "MuliBold";
-    font-size: 17px;
+    font-size: 1.7rem;
     background-color: #ffffff;
     background-image: url(../img/email.png);
     background-repeat: no-repeat;
@@ -754,7 +766,7 @@ input::placeholder{
     height: 12px;
     width: 110px;
     font-family: "MuliExtraBold";
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #6d450c;
     text-transform: uppercase;
     background: transparent;
@@ -781,12 +793,11 @@ input::placeholder{
 .footer__caption-rights{
     font-family: "MuliRegular";
     color: #af8a82;
-    font-size: 13px;
-
+    font-size: 1.3rem;
 }
 .footer__caption-jump{
     font-family: "MuliBold";
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ffffff;
     position: absolute;
     right: 164px;
@@ -805,14 +816,10 @@ input::placeholder{
 
 
 @media screen and (max-width: 768px){
-    html,
-    body{
-        font-size: 14px;
-    }
-
     .header__navigation{
         display: none;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: #0aa566;
         position: fixed;
         top: 0;
@@ -836,7 +843,7 @@ input::placeholder{
     }
     .header__burger-btn{
         display: block;
-        z-index: 999999999999;
+        z-index: 99999999999999;
     }
 
     .smoothies{
@@ -846,26 +853,42 @@ input::placeholder{
         grid-template-columns: repeat(2, 240px);
         grid-template-rows: repeat(4, 181px);
     }
-
-    .about{
+    .about__conteiner{
+        padding: 0;
+    }
+    .about__block{
         flex-direction: column;
         align-items: center;
         height: auto;
-        padding: 70px;
+        padding: 100px 50px;
     }
     .about__img{
         width: 100%;
         height: auto;
+        order:2;
     }
     .about__properties{
+        margin-top: 0;
         margin-left: 0;
+        margin-bottom: 50px;
+        order:1;
     }
     .products__items{
-        width: 1903px;
-        height: 732px;
-        overflow-x: hidden;
+        overflow-x: auto;
     }
-
+    .products__item{
+        padding: 50px 0;
+        flex-basis: 45%;
+    }
+    .products__img {
+        height: 250px;
+    }
+    .products__description {
+        text-align: center;
+    }
+    .products__capacity{
+        margin-bottom: 30px;
+    }
     /* STORY */
 
     .story{
@@ -933,30 +956,255 @@ input::placeholder{
     /* INSTAGRAM */
 
     .instagram {
-        width: 1903px;
-        height: 386px;
-        overflow-x: hidden;
+        overflow-x: auto;
     }
+
 
     /* FOOTER */
 
     .footer__top{
         flex-direction: column-reverse;
-        padding: 80px 20px;
+        padding: 80px 70px;
         align-items: center;
     }
     .footer__top-content{
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        height: 700px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         margin-bottom: 80px;
+        gap: 50px 0;
     }
-
-    .footer__subscription-follow{
-        margin-right: 80px;
+    .footer__information {
+        flex-basis: 50%;
+    }
+    .footer__information-link {
+        line-height: 38px;
     }
     
+
+    /* .footer__subscription-follow{
+        margin-right: 80px;
+    }
+     */
+}
+
+@media screen and (max-width: 320px){
+    html,
+    body{
+        font-size: 6px;
+    }
+    .title{
+        font-size: 4.5rem;
+    }
+    .btn{
+        font-size: 2.7rem;
+    }
+    .header__navigation{
+        display: none;
+        padding: 80px 0 60px;
+    }
+    .menu__list{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+        margin-top: 40px;
+    }
+    .menu__list-item{
+        margin-right: 0;
+    }
+    .menu__link{
+        font-size: 2rem;
+    }
+    .header__block-right{
+        flex-direction: column;
+    }
+    .header__personal{
+        margin-bottom: 20px;
+    }
+    .personal__list{
+        padding-right: 0;
+    }
+    .personal__list-item{
+        margin-right: 55px;
+    }
+    .personal__cart-count{
+        font-size: 1.5rem;
+        right: -14px;
+    }
+    .personal__list::after{
+        display: none;
+    }
+    .social__list-item{
+        margin-right: 20px;
+    }
+    .header__burger-btn {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: 5px;
+    }
+    .header__top {
+        padding-top: 160px;
+    }
+
+    .smoothies{
+    padding: 60px 10px 60px;
+    }
+    .smoothies__title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .smoothies_text {
+        margin-bottom: 50px;
+    }
+    .smoothies__views {
+        grid-template-columns: repeat(2, 140px);
+        grid-template-rows: repeat(4, 120px);
+        gap: 2px;
+    }
+    .smoothies__img {
+        width: 50px;
+        height: auto;
+    }
+    .smoothies__view-item:nth-child(n){
+        border-right: 0;
+        border-bottom: 0;
+    }
+    .smoothies__description{
+        font-size: 2rem;
+    }
+    .about__conteiner{
+        padding: 50px 10px;
+    }
+    .about__block{
+        padding: 0;
+    }
+    .about__properties{
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .about__title{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .title--white{
+        line-height: 40px;
+    }
+    .title--green::after {
+        display: none;
+    }
+    .properties__list{
+        margin-bottom: 30px;
+    }
+    .properties__list-item{
+        margin-bottom: 10px;
+    }
+    .btn--border-orange{
+        width: 100%;
+    }
+
+    .products__item {
+        padding: 40px 0;
+        flex-basis: 80%;
+    }
+    .products__img {
+        height: 200px;
+    }
+
+    .story{
+        padding: 50px 10px;
+    }
+    .story__img{
+        width: 300px;
+    }
+
+    .testimonials__title {
+        margin-bottom: 50px;
+    }
+    .testimonials__content {
+        margin-bottom: 70px;
+    }
+    .testimonials__img {
+        width: 170px;
+        height: auto;
+    }
+    .testimonials__feedback::before {
+        width: 100%;
+        font-size: 70px;
+        bottom: 145px;
+    }
+
+    .blog__top {
+        padding: 60px 10px 0;
+        margin-bottom: 100px;
+    }
+    .blog__img{
+        width: 300px;
+        height: auto;
+    }
+    .blog__text {
+        margin-left: 30px;
+    }
+    .blog__instagram {
+        padding-bottom: 30px;
+    }
+
+    .instagram__img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .footer__top {
+        padding: 60px 10px;
+    }
+    .footer__top-content{
+        flex-direction: column;
+    }
+    .footer__information-link{
+        line-height: 35px;
+        font-size: 2rem;
+    }
+
+
+    .footer__subscription {
+        width: 100%;
+    }
+    .footer__email{
+        width: 100%;
+    }
+    input::placeholder{
+        font-size: 1.8rem;
+    }
+    .footer__subscription-follow{
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    
+    .footer__subscription-button {
+        margin: 0 0 30px;
+        
+    }
+
+    .footer__subscription-follow::before {
+        right: 210px;
+        bottom: 54px;
+    }
+    .logo-img{
+        width: 190px;
+    }
+    .footer__caption-jump{
+        top: 30px;
+        right: 20px;
+    }
+
+    .footer__caption-button{
+        right: 10px;
+    }
+
+
 }
 
 
