@@ -646,7 +646,6 @@ background-color:#0aa566;
 .instagram{
     display: flex;
     padding-bottom: 10px;
-    width: 100%;
 }
 .instagram__img-wrapper{
     position: relative;
@@ -934,7 +933,10 @@ input::placeholder{
         margin-right: 0;
     }
     .testimonials__feedback::before {
-        font-size: 150px;
+        width: 100%;
+        font-size: 100px;
+        left: -10px;
+        bottom: 150px;
     }
 
     /* BLOG */
@@ -1203,9 +1205,131 @@ input::placeholder{
     .footer__caption-button{
         right: 10px;
     }
-
-
 }
+
+@media (min-width: 321px) and (max-width: 480px) {
+    html,
+    body{
+        font-size: 8px;
+    }
+    .title{
+        font-size: 4.5rem;
+    }
+    .btn{
+        font-size: 2.3rem;
+    }
+
+    .header__navigation{
+        display: none;
+        padding: 50px 0 0px;
+    }
+    .menu__list{
+        height: 180px;
+        margin-top: 25px;
+    }
+
+    .header__burger-btn{
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: 5px;
+    }
+
+    .smoothies{
+        padding: 60px 10px;
+    }
+    .smoothies__title{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .smoothies_text {
+        margin-bottom: 50px;
+    }
+    .smoothies__view-item:nth-child(n){
+        border-right: 0;
+        border-bottom: 0;
+    }
+    .smoothies__views {
+        grid-template-columns: repeat(2, 195px);
+        grid-template-rows: repeat(4, 160px);
+        gap: 2px;
+    }
+    .about__block {
+        padding: 60px 10px;
+    }
+    .about__properties{
+        padding-top: 0;
+    }
+    .about__title{
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    .title--green::after {
+        display: none;
+    }
+    .products__img{
+        height: 200px;
+    }
+    .products__item{
+        flex-basis: 60%;
+    }
+    .testimonials__feedback::before {
+        ;
+    }
+    .blog__top{
+        padding: 60px 10px 0;
+    }
+    .blog__content{
+        width: 100%;
+    }
+
+    .instagram__img-wrapper{
+        flex: 1 0 70%;
+    }
+    .footer__top {
+        padding: 60px 10px;
+    }
+    .footer__top-content{
+        flex-direction: column;
+    }
+    .footer__information-link{
+        line-height: 35px;
+        font-size: 2rem;
+    }
+
+
+    .footer__subscription {
+        width: 100%;
+    }
+    .footer__email{
+        width: 100%;
+    }
+    input::placeholder{
+        font-size: 1.8rem;
+    }
+
+    .footer__caption-jump{
+        top: 30px;
+        right: 15px;
+    }
+    .footer__caption-button{
+        right: 10px;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .header{
+        display: flex;
+        
+    }
+}
+
+
+
+
+
+
 
 
 
