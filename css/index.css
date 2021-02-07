@@ -184,8 +184,8 @@ ul{
     border: none;
     background: transparent;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 3%;
+    right: 3%;
     display: none;
 }
 .header__burger-img{
@@ -851,6 +851,11 @@ input::placeholder{
     .smoothies__views{
         grid-template-columns: repeat(2, 240px);
         grid-template-rows: repeat(4, 181px);
+        gap: 2px;
+    }
+    .smoothies__view-item:nth-child(n){
+        border-right: 0;
+        border-bottom: 0;
     }
     .smoothies__title{
         text-align: center;
@@ -879,8 +884,8 @@ input::placeholder{
         overflow-x: auto;
     }
     .products__item{
-        padding: 50px 0;
-        flex-basis: 45%;
+        padding: 90px 0;
+        flex-basis: 48%;
     }
     .products__img {
         height: 250px;
@@ -952,9 +957,13 @@ input::placeholder{
     .blog__article::before{
         display: none;
     }
+    .blog__img{
+        width: 100%;
+        height: auto;
+    }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 479px){
     html,
     body{
         font-size: 6px;
@@ -1101,10 +1110,10 @@ input::placeholder{
         padding: 60px 10px 0;
         margin-bottom: 100px;
     }
-    .blog__img{
-        width: 300px;
+/*     .blog__img{
+        width: 100%;
         height: auto;
-    }
+    } */
     .blog__text {
         margin-left: 30px;
     }
@@ -1176,8 +1185,8 @@ input::placeholder{
         border-bottom: 0;
     }
     .smoothies__views {
-        grid-template-columns: repeat(2, 195px);
-        grid-template-rows: repeat(4, 160px);
+        grid-template-columns: repeat(2, 155px);
+        grid-template-rows: repeat(4, 130px);
         gap: 2px;
     }
     .about__properties{
@@ -1186,6 +1195,7 @@ input::placeholder{
     .about__title{
         line-height: 40px;
         margin-bottom: 50px;
+        max-width: 590px;
     }
     .title--green::after {
         display: none;
@@ -1214,14 +1224,20 @@ input::placeholder{
         justify-content: stretch;
         
     }
-    .header__top{
+    .header__top{   
         padding: 0;
-        width: 50%;
-        background-color: #0aa566;
+        width: 55%;
     }
     .header__navigation{
-        padding: 20vh 2vh;
-        display: flex;
+        display: none;
+        width: 55%;
+        position: fixed;
+        z-index: 9999999999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #0aa566;
+        padding: 21vh 2vh;
         flex-direction: column-reverse;
     }
     .menu__list{
@@ -1234,15 +1250,18 @@ input::placeholder{
         margin-right: 0;
     }
     .header__logo{
-        top: 10%;
-        left: 149%;
+        top: 12%;
+        left: 140%;
     }
     .header__content{
-        width: 50%;
+        width: 45%;
     }
     .header__btn{
         position: relative;
-        top: 20%;
+        top: 23%;
+    }
+    .header__burger-btn{
+        display: block;
     }
 }
 @media (min-width: 769px) and (max-width: 1460px){
@@ -1260,14 +1279,11 @@ input::placeholder{
         margin-left: 0;
     }
 }
-
-@media (min-width: 1px) and (max-width: 1460px){
+@media (max-width: 1460px){
     .title--green::after {
         display: none;
     }
 }
-
-
 @media (min-width: 770px) and (max-width: 1400px){
     .products__items{
         overflow-x: auto;
@@ -1324,7 +1340,8 @@ input::placeholder{
         align-items: center;
     }
     .blog__img{
-        width: 75vw;
+        width: 100%;
+        height: auto;
     }
     .blog__article{
         padding-top: 160px;
@@ -1449,8 +1466,6 @@ input::placeholder{
         right: 10px;
     }
 }
-
-
 @media (min-width: 769px) and (max-width: 1040px){
     .smoothies{
         padding-left: 20px;
