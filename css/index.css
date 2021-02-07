@@ -325,7 +325,7 @@ background-color:#0aa566;
     width: 100%;
     display: flex;
     justify-content: space-between; 
-    height: 800px;
+    height: 735px;
 }
 .about__properties{
     padding-top: 30px;
@@ -646,6 +646,7 @@ background-color:#0aa566;
 .instagram{
     display: flex;
     padding-bottom: 10px;
+    overflow-x: auto;
 }
 .instagram__img-wrapper{
     position: relative;
@@ -844,13 +845,15 @@ input::placeholder{
         display: block;
         z-index: 99999999999999;
     }
-
     .smoothies{
         padding: 100px 20px 100px;
     }
     .smoothies__views{
         grid-template-columns: repeat(2, 240px);
         grid-template-rows: repeat(4, 181px);
+    }
+    .smoothies__title{
+        text-align: center;
     }
     .about__conteiner{
         padding: 0;
@@ -889,7 +892,6 @@ input::placeholder{
         margin-bottom: 30px;
     }
     /* STORY */
-
     .story{
         flex-direction: column;
         align-items: center;
@@ -908,9 +910,7 @@ input::placeholder{
     .story__img-wrapper::after{
         display: none;
     }
-
     /* TESTIMONIALS */
-
     .testimonials::before{
         display: none;
     }
@@ -938,9 +938,7 @@ input::placeholder{
         left: -10px;
         bottom: 150px;
     }
-
     /* BLOG */
-
     .blog__top{
         padding: 80px 20px 0;
         flex-direction: column;
@@ -954,40 +952,6 @@ input::placeholder{
     .blog__article::before{
         display: none;
     }
-
-    /* INSTAGRAM */
-
-    .instagram {
-        overflow-x: auto;
-    }
-
-
-    /* FOOTER */
-
-    .footer__top{
-        flex-direction: column-reverse;
-        padding: 80px 70px;
-        align-items: center;
-    }
-    .footer__top-content{
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 80px;
-        gap: 50px 0;
-    }
-    .footer__information {
-        flex-basis: 50%;
-    }
-    .footer__information-link {
-        line-height: 38px;
-    }
-    
-
-    /* .footer__subscription-follow{
-        margin-right: 80px;
-    }
-     */
 }
 
 @media screen and (max-width: 320px){
@@ -1049,7 +1013,6 @@ input::placeholder{
     .header__top {
         padding-top: 160px;
     }
-
     .smoothies{
     padding: 60px 10px 60px;
     }
@@ -1086,7 +1049,6 @@ input::placeholder{
         padding-top: 0;
         margin-bottom: 30px;
     }
-
     .about__title{
         width: 100%;
         margin-bottom: 30px;
@@ -1107,7 +1069,6 @@ input::placeholder{
     .btn--border-orange{
         width: 100%;
     }
-
     .products__item {
         padding: 40px 0;
         flex-basis: 80%;
@@ -1115,14 +1076,12 @@ input::placeholder{
     .products__img {
         height: 200px;
     }
-
     .story{
         padding: 50px 10px;
     }
     .story__img{
         width: 300px;
     }
-
     .testimonials__title {
         margin-bottom: 50px;
     }
@@ -1138,7 +1097,6 @@ input::placeholder{
         font-size: 70px;
         bottom: 145px;
     }
-
     .blog__top {
         padding: 60px 10px 0;
         margin-bottom: 100px;
@@ -1153,12 +1111,10 @@ input::placeholder{
     .blog__instagram {
         padding-bottom: 30px;
     }
-
     .instagram__img {
         width: 250px;
         height: 250px;
     }
-
     .footer__top {
         padding: 60px 10px;
     }
@@ -1169,8 +1125,6 @@ input::placeholder{
         line-height: 35px;
         font-size: 2rem;
     }
-
-
     .footer__subscription {
         width: 100%;
     }
@@ -1179,31 +1133,6 @@ input::placeholder{
     }
     input::placeholder{
         font-size: 1.8rem;
-    }
-    .footer__subscription-follow{
-        flex-direction: column;
-        margin: 30px 0;
-    }
-    
-    .footer__subscription-button {
-        margin: 0 0 30px;
-        
-    }
-
-    .footer__subscription-follow::before {
-        right: 210px;
-        bottom: 54px;
-    }
-    .logo-img{
-        width: 190px;
-    }
-    .footer__caption-jump{
-        top: 30px;
-        right: 20px;
-    }
-
-    .footer__caption-button{
-        right: 10px;
     }
 }
 
@@ -1218,7 +1147,6 @@ input::placeholder{
     .btn{
         font-size: 2.3rem;
     }
-
     .header__navigation{
         display: none;
         padding: 50px 0 0px;
@@ -1227,14 +1155,12 @@ input::placeholder{
         height: 180px;
         margin-top: 25px;
     }
-
     .header__burger-btn{
         width: 40px;
         height: 40px;
         top: 5px;
         right: 5px;
     }
-
     .smoothies{
         padding: 60px 10px;
     }
@@ -1254,9 +1180,6 @@ input::placeholder{
         grid-template-rows: repeat(4, 160px);
         gap: 2px;
     }
-    .about__block {
-        padding: 60px 10px;
-    }
     .about__properties{
         padding-top: 0;
     }
@@ -1273,9 +1196,6 @@ input::placeholder{
     .products__item{
         flex-basis: 60%;
     }
-    .testimonials__feedback::before {
-        ;
-    }
     .blog__top{
         padding: 60px 10px 0;
     }
@@ -1284,8 +1204,201 @@ input::placeholder{
     }
 
     .instagram__img-wrapper{
-        flex: 1 0 70%;
+        flex: 1 0 60%;
     }
+} 
+@media (min-width: 769px) and (max-width: 1530px){
+
+    .header{
+        display: flex;
+        justify-content: stretch;
+        
+    }
+    .header__top{
+        padding: 0;
+        width: 50%;
+        background-color: #0aa566;
+    }
+    .header__navigation{
+        padding: 20vh 2vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .menu__list{
+        margin-top:  10vh;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 45vh;
+    }
+    .menu__list-item{
+        margin-right: 0;
+    }
+    .header__logo{
+        top: 10%;
+        left: 149%;
+    }
+    .header__content{
+        width: 50%;
+    }
+    .header__btn{
+        position: relative;
+        top: 20%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1460px){
+    .about__block{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 64px;
+    }
+    .about__title{
+        max-width: 700px;
+    }
+    .about__properties{
+        padding-top: 55px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 1460px){
+    .title--green::after {
+        display: none;
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 1400px){
+    .products__items{
+        overflow-x: auto;
+    }
+    .products__item{
+        flex-basis: 40%;
+    }
+}
+
+@media (min-width: 1090px) and (max-width: 1370px){
+    .story{
+        padding: 120px 20px 160px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1089px){
+    .story{
+        flex-direction: column;
+        align-items: center;
+    }
+    .story__text{
+        margin-right: 0;
+    }
+    .story__content{
+        margin-bottom: 50px;
+    }
+    .story__img-wrapper::after {
+        top: -95px;
+        right: 3px;
+    }
+}
+@media (min-width: 769px) and (max-width:1500px){
+    .testimonials::before {
+        display: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 1110px){
+    .testimonials__feedback::before {
+    width: 150%;
+    font-size: 140px;
+    left: -70px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1320px){
+    .blog__article::before {
+        display: none;
+    }
+    .blog__top{
+        padding: 100px 20px 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1100px){
+    .blog__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog__img{
+        width: 75vw;
+    }
+    .blog__article{
+        padding-top: 160px;
+    }
+}
+@media (min-width: 1200px) and (max-width:1600px){
+    .instagram__img-wrapper{
+        flex-basis: 27%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1199px){
+    .instagram__img-wrapper{
+        flex-basis: 40%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .instagram__img-wrapper{
+        flex-basis: 60%;
+    }
+}
+@media (min-width: 1290px) and (max-width: 1690px){
+    .footer__top{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer__top-content{
+        margin-bottom: 80px;
+    }
+}
+@media (min-width: 1060px) and (max-width: 1289px){
+    .footer__top{
+        padding: 70px 60px;
+    }
+    .footer__logo{
+        width: 50%;
+    }
+    .footer__top-content{
+        width: 50%;
+        flex-wrap: wrap;
+        gap: 5vw 5vh;
+    }
+}
+@media (min-width: 200px) and (max-width: 1059px){
+    .footer__top{
+        flex-direction: column-reverse;
+        padding: 80px 70px;
+        align-items: center;
+    }
+    .footer__top-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 80px;
+        gap: 50px 0;
+    }
+    .footer__information {
+        flex-basis: 50%;
+    }
+    .footer__information-link {
+        line-height: 38px;
+    }
+    .footer__caption-jump{
+        top: 40%;
+        right: 10% ;
+    }
+    .footer__caption-button{
+        top: -40%;
+        right: 2%;
+    }
+    .footer__subscription{
+        max-width: 495px;
+    }
+}
+@media (min-width: 200px) and (max-width: 646px){
     .footer__top {
         padding: 60px 10px;
     }
@@ -1296,18 +1409,9 @@ input::placeholder{
         line-height: 35px;
         font-size: 2rem;
     }
-
-
-    .footer__subscription {
-        width: 100%;
-    }
-    .footer__email{
-        width: 100%;
-    }
     input::placeholder{
         font-size: 1.8rem;
     }
-
     .footer__caption-jump{
         top: 30px;
         right: 15px;
@@ -1315,16 +1419,50 @@ input::placeholder{
     .footer__caption-button{
         right: 10px;
     }
-} 
-
-@media (min-width: 768px) and (max-width: 1024px){
-
-    .header{
-        display: flex;
-        
+}
+@media (min-width: 200px) and (max-width: 500px){
+    .footer__subscription{
+        width: 100%;
+    }
+    .footer__email{
+        width: 100%;
+    }
+    .footer__subscription-follow{
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    .footer__subscription-button {
+        margin: 0 0 30px;       
+    }
+    .footer__subscription-follow::before {
+        right: 70%;
+        bottom: 80%;
+    }
+    .logo-img{
+        width: 190px;
+    }
+    .footer__caption-jump{
+        top: 30px;
+        right: 20px;
+    }
+    .footer__caption-button{
+        right: 10px;
     }
 }
 
+
+@media (min-width: 769px) and (max-width: 1040px){
+    .smoothies{
+        padding-left: 20px;
+        padding-right: 20px ;
+    }
+    .smoothies__views {
+        grid-template-columns: repeat(4, 180px);
+        grid-template-rows: repeat(2, 165px);
+        gap: 2px;
+    }
+
+}
 
 
 
