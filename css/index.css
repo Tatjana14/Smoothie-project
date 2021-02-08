@@ -558,10 +558,6 @@ background-color:#0aa566;
 .text--white{
     color: #ffffff;
 }
-/* .testimonials__img:after{
-    content: "\2190 \2192";
-    color: #fcb438;
-} */
 
 
 /* Blog */
@@ -663,8 +659,8 @@ background-color:#0aa566;
     height: 26px;
     width: 26px;
     z-index: 1;
-    bottom: 20px;
-    right: 25px;
+    bottom: 5%;
+    right: 6.5%;
 }
 
 /* Footer */
@@ -1214,7 +1210,7 @@ input::placeholder{
     }
 
     .instagram__img-wrapper{
-        flex: 1 0 60%;
+        flex-basis: 55%;
     }
 } 
 @media (min-width: 769px) and (max-width: 1530px){
