@@ -1,0 +1,25 @@
+//main: ./../main.less
+
+.instagram{
+    display: flex;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    &__img-wrapper{
+        position: relative;
+        flex: 1 0 20%;    
+    }
+    &__img{
+        width: 100%;
+    }
+    &__img-wrapper::after{
+        content: "";
+        display: inline-block;
+        background-image: url("../img/icon.png");
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        z-index: 1;
+        bottom: 5%;
+        right: 6.5%;
+    }
+}

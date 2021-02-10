@@ -1,0 +1,39 @@
+//main: ./../main.less
+
+.title{
+    font-family: "MuliExtraBold";
+    font-size: 5.0rem;
+    &--yellow{
+    color: #f7ae3b;
+    letter-spacing: -1px;    
+    }
+    &--white{
+        color: #ffffff;
+        font-size: 5.5rem;
+        margin-bottom: 60px;
+        line-height: 60px;
+        letter-spacing: -1.1px;
+    }
+    &--green{
+        color: #cae941;
+        position: relative;
+    }
+    &--green::after{
+        content: "";
+        display: inline-block;
+        background-image: url("../img/line.png");
+        width: 450px;
+        height: 13px;
+        position: absolute;
+        top: 65px;
+        transform: translateX(-95%);
+        -webkit-transform: translateX(-95%);
+        -moz-transform: translateX(-95%);
+        -ms-transform: translateX(-95%);
+        -o-transform: translateX(-95%);
+    }
+    &--orange{
+        color: #f2612d;
+    }
+}
+

@@ -1,0 +1,35 @@
+//main: ./../main.less
+
+.story{
+    padding: 120px 0 160px;
+    display: flex;
+    justify-content: center;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__text{
+        max-width: 511px;
+        margin: 43px 206px 60px 0;
+    }
+    
+    &__btn{
+        height: 60px;
+        width: 301px;
+    }
+    &__img-wrapper{
+        position: relative;
+    }
+    &__img-wrapper::after{
+        content: "";
+        display: inline-block;
+        background-image: url("../img/stamp.png");
+        position: absolute;
+        width: 290px;
+        height: 216px;
+        top: 22px;
+        right: 460px;
+    }
+}

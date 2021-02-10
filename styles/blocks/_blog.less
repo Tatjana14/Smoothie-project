@@ -1,0 +1,70 @@
+//main: ./../main.less
+
+.blog__top{
+    padding-top: 99px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+
+
+}
+.blog__title{
+    margin-bottom: 50px ;
+}
+
+.blog__content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+}
+.blog__article{
+    padding-top: 229px;
+    margin-left: 61px;
+    position: relative;
+    z-index: 2;
+}
+.blog__article::before{
+    content: "";
+    display: inline-block;
+    background-image:url("../img/line-blog.png");
+    width: 687px;
+    height: 12px;
+    position: absolute;
+    top: 180px;
+    left: -100px;
+    z-index: 1;
+
+}
+.blog__subtitle{
+    font-family: "MuliExtraBold";
+    font-size: 3rem;
+    line-height: 40px;
+    color:#f2612d;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+}
+.blog__date{
+    font-size: 1.6rem;
+}
+
+.blog__text{
+    max-width: 472px;
+    margin-left: 63px;
+}
+
+.blog__instagram{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.blog__instagram-link{
+    font-family: "MuliExtraBold";
+    font-size: 2.4rem;
+    color: #0aa566;
+    line-height: 40px;
+    text-align: center;    
+}
+.blog__instagram-img{
+    vertical-align: middle;
+}

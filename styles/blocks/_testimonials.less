@@ -1,0 +1,76 @@
+//main: ./../main.less
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #672f1b;
+    padding: 117px 0 80px;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        background-image: url("../img/dots.png");
+        width: 410px;
+        height: 301px;
+        position: absolute ;
+        top: -80px;
+        right: 58px;
+    }
+    
+    &__title{
+        margin-bottom:  118px;
+    }
+    
+    &__content{
+        display: flex;
+        margin-bottom: 121px;
+    }
+    
+    &__feedback::before{
+        content: "Sarah A";
+        display: inline-block;
+        position: absolute;
+        font-family: "MuliExtraBold";
+        font-size: 20rem;
+        color: rgba(82, 25, 5, 0.6);
+        line-height: 0.2;
+        letter-spacing: -4px;
+        opacity: 0.8;
+        font-weight: 800;
+        left: -166px;
+        bottom: 158px;
+        width: 770px;
+        z-index: -1;
+    }
+    &__feedback{
+        max-width: 455px;
+        text-align: center;
+        margin-right: 59px;
+        padding-top: 55px;
+        position: relative;
+        z-index: 1;
+    }
+    &__img{
+        position: relative;
+        z-index: 1; 
+    }
+    
+    &__quote{
+        font-family: "MuliSemiBoldItalic";
+        color: #f7ae3b;
+        line-height: 45px;
+    }
+    &__arrows{
+        display: flex;
+    }
+    &__arrow-left{
+        margin-right: 98px;
+        background-color: transparent;
+    }
+    &__arrow-right{
+        background-color: transparent;
+    }
+}

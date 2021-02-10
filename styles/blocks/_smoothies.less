@@ -1,0 +1,60 @@
+//main: ./../main.less
+
+.smoothies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:98px 0 107px;
+    &__title{
+    margin-bottom: 55px;
+    }
+    &_text{
+        max-width: 915px;
+        width: 100%;
+        text-align: center;
+        line-height: 1.94;
+        margin-bottom: 87px;    
+    }
+    &__views{
+        display: grid;
+        grid-template-rows: repeat(2, 181px);
+        grid-template-columns: repeat(4, 240px);
+        background-color: #f6edde;
+    }
+    &__view-item{
+        background-color:rgb(255, 255, 255);
+    }
+    &__view-item:nth-child(-n+3){
+        border-right: 2px solid #f6edde;
+        border-bottom: 2px solid #f6edde;
+    }
+    &__view-item:nth-child(4){
+        border-bottom: 2px solid #f6edde;
+    }
+    &__view-item:nth-child(5){
+        border-right: 2px solid #f6edde;
+    }
+    &__view-item:nth-child(6){
+        border-right: 2px solid #f6edde;
+    }
+    &__view-item:nth-child(7){
+        border-right: 2px solid #f6edde;
+    }
+    &__view-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+    }
+    &__description{
+        font-family: "MuliExtraBold";
+        font-size: 2.5rem;
+        color: #f2612d;
+        text-align: center;
+    }
+}

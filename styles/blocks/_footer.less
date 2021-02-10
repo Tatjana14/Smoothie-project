@@ -1,0 +1,141 @@
+//main: ./../main.less
+
+.footer__top{
+    background-color: #f6ab3b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 79px 100px 90px;
+}
+.footer__top-content{
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo{
+    display: flex;
+    align-items: center;
+}
+.footer__information{
+    display: flex;
+    flex-direction:column;
+}
+
+.footer__information-list{
+    margin-top: 30px;
+}
+.footer__information-link{
+    font-family: "MuliBold";
+    color: #6d450c;
+    font-size: 1.8rem;
+    line-height: 35px;
+    letter-spacing: -0.45px;
+}
+.footer__title{
+    font-family: "MuliExtraBold";
+    color: #ffffff;
+    font-size: 2.6rem;
+}
+.footer__payment{
+    display: flex;
+    flex-direction: column;
+}
+.footer__payment-list{
+    margin-top: 32px;
+    width:  245px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 23px 18px;
+}
+
+.footer__subscription{
+    display: flex;
+    flex-direction: column;
+}
+.footer__email{
+    margin-top: 35px;
+    height: 60px;
+    width: 495px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 24px 20px 23px 63px;
+    font-family: "MuliBold";
+    font-size: 1.7rem;
+    background-color: #ffffff;
+    background-image: url("../img/email.png");
+    background-repeat: no-repeat;
+    background-position: 23px center;
+}
+.footer__subscription-follow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 27px 52px 0 0;
+    position: relative;
+}
+.footer__subscription-follow::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../img/arrow-footer.png");
+    width: 48px;
+    height: 43px;
+    position: absolute;
+    right: 280px;
+    bottom: 0;
+
+
+}
+.footer__subscription-button{
+    height: 12px;
+    width: 110px;
+    font-family: "MuliExtraBold";
+    font-size: 1.8rem;
+    color: #6d450c;
+    text-transform: uppercase;
+    background: transparent;
+    letter-spacing: -0.36px;
+    margin-right: 43px;
+}
+
+.footer__subscription-social{
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__subscription-link:last-child{
+    margin-right: 0;
+}
+.footer__caption{    
+    display: flex;
+    justify-content: center;
+    background-color: #6c2c1c;    
+    padding: 26px 21px;
+    position: relative;
+}
+.footer__caption-rights{
+    font-family: "MuliRegular";
+    color: #af8a82;
+    font-size: 1.3rem;
+}
+.footer__caption-jump{
+    font-family: "MuliBold";
+    font-size: 1.6rem;
+    color: #ffffff;
+    position: absolute;
+    right: 164px;
+}
+.footer__caption-button{
+    height: 50px;
+    width: 50px;
+    background-color: #f2662f;
+    position: absolute;
+    right: 101px;
+    top: -25px;
+}
