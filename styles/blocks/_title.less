@@ -4,18 +4,19 @@
     font-family: "MuliExtraBold";
     font-size: 5.0rem;
     &--yellow{
-    color: #f7ae3b;
+    color: @primaryColorTitle;
     letter-spacing: -1px;    
     }
     &--white{
-        color: #ffffff;
+        color: @secondaryColorTitle;
         font-size: 5.5rem;
         margin-bottom: 60px;
         line-height: 60px;
         letter-spacing: -1.1px;
     }
     &--green{
-        color: #cae941;
+        @primaryColorTitle: #cae941;
+        color: @primaryColorTitle;
         position: relative;
     }
     &--green::after{
