@@ -1,0 +1,14 @@
+//main: ./main.less
+
+.flex__row(@justify, @align: stretch){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flex__column(@justify, @align){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
