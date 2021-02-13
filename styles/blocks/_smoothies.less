@@ -1,8 +1,7 @@
 //main: ./../main.less
 
 .smoothies{
-    display: flex;
-    flex-direction: column;
+    .flex__column(center);
     align-items: center;
     padding:98px 0 107px;
     &__title{
@@ -41,9 +40,7 @@
         border-right: 2px solid #f6edde;
     }
     &__view-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        .flex__column(center);
         align-items: center;
     }
     &__img{

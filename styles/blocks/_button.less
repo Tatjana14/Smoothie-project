@@ -1,13 +1,12 @@
 //main: ./../main.less
 
 .btn{
-    display: flex;
-    justify-content: space-around;
+    .flex__row(space-around);
     align-items:center;
     font-family: "MuliExtraBold";
     color: rgb(255, 255, 255);
     font-size: 2.1rem;
-    border-radius: 30px;
+    border-radius: @buttonBorderRadius;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
@@ -28,9 +27,7 @@
     &--border-orange{
         height: 60px;
         width: 380px;
-        background-color: transparent;
-        border: solid 2px #f8b231;
-        
+        .button__properties(#f8b231);      
     }
     &--border-orange:after{
         content: "\2192";
@@ -40,9 +37,7 @@
     &--border-white{
         height: 60px;
         width: 204px;
-        background-color: transparent;
-        border: solid 2px #ffffff;
-    
+        .button__properties(#ffffff);    
     }
     &--border-white:after{
         content: "\2192";

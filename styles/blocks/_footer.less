@@ -2,23 +2,19 @@
 
 .footer__top{
     background-color: @primaryColor;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    .flex__row(space-between);
     padding: 79px 100px 90px;
 }
 .footer__top-content{
     width: 1220px;
-    display: flex;
-    justify-content: space-between;
+    .flex__row(space-between);
 }
 .footer__logo{
     display: flex;
     align-items: center;
 }
 .footer__information{
-    display: flex;
-    flex-direction:column;
+    .flex__column();
 }
 
 .footer__information-list{
@@ -37,8 +33,7 @@
     font-size: 2.6rem;
 }
 .footer__payment{
-    display: flex;
-    flex-direction: column;
+    .flex__column()
 }
 .footer__payment-list{
     margin-top: 32px;
@@ -51,8 +46,7 @@
 }
 
 .footer__subscription{
-    display: flex;
-    flex-direction: column;
+    .flex__column()
 }
 .footer__email{
     margin-top: 35px;
@@ -72,10 +66,8 @@
     background-position: 23px center;
 }
 .footer__subscription-follow{
-    display: flex;
-    flex-direction: row;
+    .flex__row(flex-end);
     align-items: center;
-    justify-content: flex-end;
     margin: 27px 52px 0 0;
     position: relative;
 }
@@ -112,9 +104,8 @@
 .footer__subscription-link:last-child{
     margin-right: 0;
 }
-.footer__caption{    
-    display: flex;
-    justify-content: center;
+.footer__caption{
+    .flex__row(center);    
     background-color: #6c2c1c;    
     padding: 26px 21px;
     position: relative;

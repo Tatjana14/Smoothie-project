@@ -1,14 +1,17 @@
 //main: ./main.less
 
-.flex__row(@justify, @align: stretch){
+.flex__row(@justify){
     display: flex;
     justify-content: @justify;
-    align-items: @align;
 }
 
-.flex__column(@justify, @align){
+.flex__column(@justify: flex-start){
     display: flex;
     flex-direction: column;
     justify-content: @justify;
-    align-items: @align;
 }
+
+.button__properties(@borderColor){
+    background-color: transparent;
+    border: solid 2px @borderColor;
+    }

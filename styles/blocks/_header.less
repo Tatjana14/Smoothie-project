@@ -11,9 +11,7 @@
     position: relative;
     }
     &__navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    .flex__row(space-between);
     align-items: center;
     width: 100%;
     }
@@ -28,10 +26,8 @@
     -o-transform: translate(-50%, -60%);
     }
     &__block-right{
-    display: flex;
-    flex-direction: row;
+    .flex__row(center);
     align-items: center;
-    justify-content: space-between;
     }
     &__burger-btn{
     width: 50px;
@@ -48,8 +44,7 @@
 
     }
     &__content{
-    display: flex;
-    justify-content: center;
+    .flex__row(center);
     }
     &__btn{
     height: 70px;
