@@ -11,7 +11,9 @@
 <body>
 <header class="header">
     <div class="header__top">
+        <div class="header__burger-icon" id="burger-icon"></div>
         <div class="header__navigation">
+            <div class="header__close-btn" id="close-btn"></div>            
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
@@ -45,7 +47,7 @@
                         </li>
                         <li class="personal__list-item">
                             <a class="personal__link-cart" href=""><img class="personal__img-cart" src="img/cart.png" alt="cart"></a>
-                                <span class="personal__cart-count">3</span>
+                                <span id="cart_count" class="personal__cart-count">0</span>
                         </li>
                     </ul>
                 </div>
@@ -64,9 +66,6 @@
                 </div>
             </div>
         </div>
-        <a href="" class="header__burger-btn">
-                <img class="header__burger-img" src="./img/hamburger__menu.svg" alt="menu">
-            </a>
         <div class="header__logo logo">
             <a class="logo__link" href="">
                 <img class="logo__img" src="img/logo.png" alt="Organic fresh food">
@@ -286,6 +285,8 @@
         <button class="footer__caption-button"><img class="footer__caption-img" src="./img/gotop.png"></button>
     </div>
 </footer>
+<script src="main.js">
+</script>
 </body>
 </html>
 
