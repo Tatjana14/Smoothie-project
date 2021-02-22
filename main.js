@@ -13,9 +13,7 @@ function burgerMenu(){
 function toggleBurgerMenu(){
     burger_Menu.classList.toggle('header__navigation-active')
 }
-
 burgerMenu()
-
 
 let buy__battons = document.querySelectorAll('.btn--border-white');
 let cart_count  = document.getElementById('cart_count')
