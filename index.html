@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./WOW-master/WOW-master/css/libs/animate.css">
     <title>Smoothie</title>
 </head>
 <body>
@@ -73,7 +74,7 @@
         </div>
     </div> 
     <div class="header__content">
-        <button class="header__btn btn btn--green-bg">Shop now</button>
+        <button class="header__btn btn btn--green-bg wow slideInLeft ">Shop now</button>
     </div>
 </header>
 <section class="smoothies">
@@ -130,7 +131,7 @@
                     <li class="properties__list-item"><span class="properties__bold">Gluten-Free & Grain-Free</span></li>
                     <li class="properties__list-item"><span class="properties__bold">Corn-Free & Soy-Free</span></li>
                 </ul>
-                <button class="btn btn--border-orange">About Organic Smoothie</button>
+                <button class="btn btn--border-orange wow slideInRight" data-wow-offset="200" >About Organic Smoothie</button>
             </div>
         </div>
     </div>
@@ -141,25 +142,25 @@
             <img class="products__img" src="./img/dark sm.png" alt="Dark chocolate Smoothie">
             <h3 class="products__description">Dark chocolate Smoothie</h3>
             <span class="products__capacity">100 ml</span> 
-            <button class="btn btn--border-white">Buy</button>
+            <button class="btn btn--border-white wow pulse" data-wow-offset="200" data-tilt>Buy</button>
         </div>
         <div class="products__item products_item--vegan">
             <img class="products__img" src="./img/vegan sm.png" alt="Vegan Lettuce Smoothie">
             <h3 class="products__description">Vegan Lettuce Smoothie</h3>
             <span class="products__capacity">100 ml</span> 
-            <button class="btn btn--border-white">Buy</button>
+            <button class="btn btn--border-white wow pulse" data-wow-offset="200">Buy</button>
         </div>        
         <div class="products__item products_item--lemon">
             <img class="products__img" src="./img/lemon sm.png" alt="Lemon Ginger Smoothie">
             <h3 class="products__description">Lemon Ginger Smoothie</h3>
             <span class="products__capacity">100 ml</span> 
-            <button class="btn btn--border-white">Buy</button>
+            <button class="btn btn--border-white wow pulse" data-wow-offset="200">Buy</button>
         </div>          
         <div class="products__item products_item--turmeric">
             <img class="products__img" src="./img/turmeric sm.png" alt="Turmeric Garlic Smoothie">
             <h3 class="products__description">Turmeric Garlic Smoothie</h3>
             <span class="products__capacity">100 ml</span> 
-            <button class="btn btn--border-white">Buy</button>
+            <button class="btn btn--border-white wow pulse" data-wow-offset="100">Buy</button>
         </div>
     </div>    
 </section>
@@ -167,7 +168,7 @@
     <div class="story__content">
         <h2 class="story__title title title--yellow">Our story</h2>
         <p class="story__text text text--black">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
-        <button class="story__btn btn btn--green-bg">Who we are</button>
+        <button class="story__btn btn btn--green-bg wow slideInLeft" data-wow-offset="100" data-tilt data-tilt-reset="false">Who we are</button>
     </div>
     <div class="story__img-wrapper"><img class="story__img" src="./img/story.png" alt="Story"></div>
 </section>
@@ -285,8 +286,20 @@
         <button class="footer__caption-button"><img class="footer__caption-img" src="./img/gotop.png"></button>
     </div>
 </footer>
+
 <script src="main.js">
 </script>
+
+<script src="./WOW-master/WOW-master/dist/wow.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+
+<script>
+new WOW().init();
+</script>
+
+<script type="text/javascript" src="./vanilla_tilt_master/dist/vanilla-tilt.min.js"></script>
+
 </body>
 </html>
 
