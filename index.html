@@ -10,7 +10,7 @@
     <title>Smoothie</title>
 </head>
 <body>
-<header class="header">
+<header id="header" class="header">
     <div class="header__top">
         <div class="header__burger-icon" id="burger-icon"></div>
         <div class="header__navigation">
@@ -18,22 +18,22 @@
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__link" href="">Shop</a>
+                        <a class="menu__link" href="#shop">Shop</a>
                     </li>
                     <li class="menu__list-item">
                         <a class="menu__link" href="">Home</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="">Story</a>
+                        <a class="menu__link" href="#story">Story</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="">About</a>
+                        <a class="menu__link" href="#about">About</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="">Blog</a>
+                        <a class="menu__link" href="#blog">Blog</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="">Testimonials</a>
+                        <a class="menu__link" href="#testimonials">Testimonials</a>
                     </li>
                 </ul>
             </nav>
@@ -115,7 +115,7 @@
         </div>
     </div>
 </section>             
-<section class="about about--bg">
+<section id="about" class="about about--bg">
     <div class="conteiner about__conteiner">
         <div class="about__block">
             <img class="about__img" src="./img/about-img.png" alt="aboute" data-tilt data-tilt-startX="20" data-tilt-startY="-20">
@@ -136,7 +136,7 @@
         </div>
     </div>
 </section>     
-<section class="products">
+<section id="shop" class="products">
     <div class="products__items">
         <div class="products__item products_item--dark">
             <img class="products__img" src="./img/dark sm.png" alt="Dark chocolate Smoothie">
@@ -164,7 +164,7 @@
         </div>
     </div>    
 </section>
-<section class="story">
+<section id="story" class="story">
     <div class="story__content">
         <h2 class="story__title title title--yellow">Our story</h2>
         <p class="story__text text text--black">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
@@ -172,7 +172,7 @@
     </div>
     <div class="story__img-wrapper"><img class="story__img" src="./img/story.png" alt="Story"></div>
 </section>
-<section class="testimonials">
+<section id="testimonials" class="testimonials">
         <h2 class="testimonials__title title title--yellow">Why clients <span class="title--orange">LOVE</span> us?</h2>
         <div class="testimonials__content">
             <div class="testimonials__feedback">
@@ -186,7 +186,7 @@
             <button class="testimonials__arrow-right"><img src="./img/arrow-r .png" alt="arrow-right"></button>
         </div>
 </section>
-<section class="blog">
+<section id="blog" class="blog">
     <div class="blog__top">
         <div class="blog__content">
             <h2 class="blog__title title title--yellow">Our blog</h2>
@@ -283,7 +283,7 @@
     <div class="footer__caption">
         <span class="footer__caption-rights" >&copy;2020. All Rights Reserved.</span>
         <span class="footer__caption-jump">Go Top</span>
-        <button class="footer__caption-button"><img class="footer__caption-img" src="./img/gotop.png"></button>
+        <a href="#header" class="footer__caption-button"><img class="footer__caption-img" src="./img/gotop.png"></a>
     </div>
 </footer>
 
@@ -291,8 +291,6 @@
 </script>
 
 <script src="./WOW-master/WOW-master/dist/wow.min.js"></script>
-
-<script src="js/wow.min.js"></script>
 
 <script>
 new WOW().init();

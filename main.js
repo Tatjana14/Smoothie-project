@@ -1,4 +1,3 @@
-
 let burger_Menu = document.querySelector('.header__navigation')
 
 function burgerMenu(){
@@ -24,4 +23,17 @@ function addToCart(){
 
 for(let i = 0; i < buy__battons.length; i++){
     buy__battons[i].addEventListener('click',  addToCart)
+}
+
+let anchors = document.querySelectorAll('a[href*="#"]')
+
+for(let anchor of anchors){
+    anchor.addEventListener('click', function(event){
+        event.preventDefault()
+        let blockId = anchor.getAttribute('href')
+        document.querySelector(blockId).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
 }
